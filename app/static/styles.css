@@ -1,7 +1,17 @@
-.header1{
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: rgb(50, 109, 89);
-        padding: 1rem;
-        font-size: 180px;
-        text-align: center;
+    body {
+      background-color: #f8f9f4;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
     }
+
+    .header1 {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(50, 109, 89);
+      padding: 1rem;
+      font-size: 150px; /* deixei menor pra caber bem na tela */
+      text-align: center;
+      transition: color 0.5s ease;
+    }
+
+
