@@ -8,10 +8,21 @@
     .header1 {
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       color: rgb(50, 109, 89);
-      padding: 1rem;
-      font-size: 150px; /* deixei menor pra caber bem na tela */
+      font-size: 150px; 
       text-align: center;
-      transition: color 0.5s ease;
+      margin-bottom: 0px;
     }
+
+    .ul{
+      list-style-type: none;
+    }
+    .li{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(77, 131, 112);
+      border: 2px solid #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
 
 

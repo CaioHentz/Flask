@@ -10,7 +10,15 @@
 
     <header>
         <h1 class="header1">Olá, Mundo!</h1>
-    </header>    
+        
+    </header>  
+
+    <ul class="ul">
+        {% for usuario in usuarios %}
+            <li class="li"> {{usuario}} </li>    
+        {% endfor %}
+    </ul>
+
     
     
 </body>
