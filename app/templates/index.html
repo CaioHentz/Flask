@@ -9,15 +9,43 @@
 <body>
 
     <header>
-        <h1 class="header1">Olá, Mundo!</h1>
-        
+        <h1 class="header1">Usuários</h1>
     </header>  
 
-    <ul class="ul">
+    <div class="content">
+        <div class="add-user">
+            <h1 class="add-user-title">Criar usuário</h1>
+            <form action="/novoUsuario" method="post" class="form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome-usuario" required>
+                <button type="submit" class="cadastrar">Cadastrar</button>
+            </form>
+        </div>
+
+
+        <ul class="ul">
         {% for usuario in usuarios %}
-            <li class="li"> {{usuario.username}} </li>    
+            <li class="li"> 
+                
+                <form action="{{url_for('hello.editarUsuario', usuario_id=usuario.id)}}" method="POST">
+                    <input type="text" name="nome_usuario" value="{{usuario.username}} " required>
+                    <button type="submit" class="update">✏️</button>
+                </form>
+                <form action="{{url_for('hello.removerUsuario', usuario_id=usuario.id)}}" method="POST">
+                    <button action= "submit" class="remove">🗑️</button>
+                </form>
+            </li>    
         {% endfor %}
-    </ul>
+        </ul>
+    </div>
+    
+
+    
+    
+
+   
+
+    
 
     
     

@@ -2,7 +2,7 @@
       background-color: #f8f9f4;
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 20px;
+      padding: 10px;
     }
 
     .header1 {
@@ -11,6 +11,43 @@
       font-size: 150px; 
       text-align: center;
       margin-bottom: 0px;
+      margin-top: 10px;
+    }
+
+    .content{
+      display: flex; 
+      padding-left: 5px;    
+      padding-top: 30px;
+      gap: 30px;           
+      align-items: flex-start; 
+      margin: 50px;
+      border-top: 1px solid rgb(136, 201, 179);
+    }
+
+    .add-user{
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+
+    .add-user-title{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(50, 109, 89);
+      text-align: left;
+    }
+    .form{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(50, 109, 89);
+    }
+    .cadastrar{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(50, 109, 89);
+      background-color: #f8f9f4;
+      border: 1px solid rgb(50, 109, 89);
+      border-radius: 5px;
+    }
+    .submit:hover {
+      background-color: #d5dac2; /* Green */
+      color: rgb(42, 94, 77);
     }
 
     .ul{
@@ -19,10 +56,26 @@
     .li{
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: rgb(77, 131, 112);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       border: 2px solid #ccc;
       padding: 10px;
       margin-bottom: 5px;
+      width: 400px;
     }
+
+    .remove{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .update{
+      border: none;
+    }
+    .update:hover{
+      color:#888d75;
+    }
+
 
 
 
