@@ -14,14 +14,29 @@
         <h1 class="header1">Usuários</h1>
     </header>  
 
+    {% with messages = get_flashed_messages(with_categories=true)  %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{category}}"> {{message}} </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+
     <div class="content">
         <div class="add-user">
             <h1 class="add-user-title">Criar usuário</h1>
-            <form action="/novoUsuario" method="post" class="form">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome-usuario" required>
-                <button type="submit" class="cadastrar">Cadastrar</button>
+            <form action={{url_for("hello.novoUsuario")}} method="post" class="form" novalidate>
+
+                {{form.hidden_tag()}}
+                {{form.username.label}}
+                {{form.username(class='form-control', placeholder="Nome do Usuário")}}
+                {{form.submit(class='btn-submit')}}
             </form>
+<!--                <label for="nome">Nome:</label>-->
+<!--                <input type="text" id="nome" name="nome-usuario" required>-->
+<!--                <button type="submit" class="cadastrar">Cadastrar</button>-->
+<!--            </form>-->
         </div>
 
 
